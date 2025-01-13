@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jersey Customization Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jersey Customization</h1>
+    <div class="customization-area">
+      <div class="controls">
+        <label for="jerseyColor">Choose Jersey Color:</label>
+        <input type="color" id="jerseyColor" value="#ff0000">
+        
+        <label for="jerseyText">Add Text:</label>
+        <input type="text" id="jerseyText" placeholder="Your Name">
+
+        <label for="logoUpload">Upload Logo:</label>
+        <input type="file" id="logoUpload" accept="image/*">
+
+        <button id="resetButton">Reset</button>
+        <button id="exportCodeButton">Export Code</button>
+        <button id="exportButton">Download Design</button>
+      </div>
+      <canvas id="jerseyCanvas" width="400" height="500"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
